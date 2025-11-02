@@ -11,8 +11,8 @@
 <br />
 <div align="center">
 
-  <h3 align="center">PUT TITLE OF REPO HERE</h3>
-  <p align="center">PUT DESCRIPTION OF REPO HERE</p>
+  <h3 align="center">Duskire Portfolio Site</h3>
+  <p align="center">Repo for duskire.com</p>
   <br>
   
 </div>
@@ -27,8 +27,11 @@ Write description of project and any other relevant information here
 
 ### Built With
 
-* List the items project was built in
-
+* Next.js
+* HTML
+* Tailwind CSS
+* TypeScript
+* React
 
 
 ## Getting Started
@@ -103,4 +106,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/Duskire/Temp
 [license-shield]: https://img.shields.io/github/license/Duskire/Template.svg?style=for-the-badge
 [license-url]: https://github.com/Duskire/Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/duskire-undefined-3a3536316
+[linkedin-url]: https://www.linkedin.com/in/zak-bool/
