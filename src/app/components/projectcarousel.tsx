@@ -5,14 +5,14 @@ import { CarouselSet } from "./carousels";
 
 interface CarouselProps {
   carousel: CarouselSet;
-  imageHeight?: string; // e.g. "h-64", "md:h-96"
-  imageWidth?: string;  // e.g. "w-[600px]" or "max-w-lg"
+  imageHeight?: string;
+  imageWidth?: string;
 }
 
 export default function ProjectCarousel({
   carousel,
   imageHeight = "h-56 md:h-96",
-  imageWidth = "w-[600px]", // default consistent width
+  imageWidth = "w-[600px]",
 }: CarouselProps) {
   return (
     <div id={`${carousel.id}-carousel`} className="relative w-full flex justify-center" data-carousel="static">

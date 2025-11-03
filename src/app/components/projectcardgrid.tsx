@@ -1,7 +1,7 @@
-import ProjectCard from "./projectcard";
+import ProjectCard, { ProjectCardProps } from "./projectcard";
 
 export default function ProjectCardGrid() {
-  const cards = [
+  const cards: ProjectCardProps[] = [
     {
       image: "/placeholder.svg",
       title: "Loft (WIP)",

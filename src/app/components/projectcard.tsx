@@ -1,6 +1,20 @@
 import Link from "next/link";
 
-export default function ProjectCard({ image, title, description, href, buttonText = "Read more" }) {
+export interface ProjectCardProps {
+  image: string;
+  title: string;
+  description: string;
+  href: string;
+  buttonText?: string;
+}
+
+export default function ProjectCard({
+  image,
+  title,
+  description,
+  href,
+  buttonText = "Read more",
+}: ProjectCardProps) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-dark-primary dark:border-gray-700">
       <Link href={href}>
