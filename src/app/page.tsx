@@ -1,27 +1,34 @@
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import ProjectCardGrid from "./components/projectcardgrid";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-grow">
-        <div className="flex flex-col justify-between h-[calc(100vh-96px)] font-medium">
-          <div className="justify-start">
-            <div className="text-[96px] mt-[25vh] ml-[64px] leading-[1.3]">
+
+      <main className="flex-grow flex flex-col font-medium">
+        {/* Main title section*/}
+        <section className="flex flex-col justify-start flex-grow">
+          <div className="mt-[25vh] ml-[64px]">
+            <div className="text-[96px] leading-[1.3]">
               Functional, <br />thoughtful design
             </div>
-            <div className="text-[32px] ml-[64px] pt-[32px]">
+            <div className="text-[32px] pt-[32px]">
               Hi, I’m Zak — a web and software designer/developer, <br />
               focused on expanding my skills across various languages and frameworks.
             </div>
           </div>
-          <div className="text-center mb-[64px] mx-auto">
-            Projects section currently under construction.<br />
-            Check out the footer below though!
+        </section>
+
+        {/* Cards */}
+        <section className="relative mt-[20vh]">
+          <div className="flex justify-center p-[64px]">
+            <ProjectCardGrid />
           </div>
-        </div>
+        </section>
       </main>
+
       <Footer />
     </div>
   );
@@ -33,7 +40,8 @@ export default function Home() {
             Loft (WIP) - Electron, HTML, Tailwind CSS, TypeScript, React <br />
             DuskAmp (WIP) - Qt, C++ <br />
             DuskTorrent (WIP) - Spring, Java <br />
-            This Site (WIP) - Next.js, Electron, HTML, Tailwind CSS, TypeScript, React <br /> */
+            This Site (WIP) - Next.js, Electron, HTML, Tailwind CSS, TypeScript, React <br /> 
+*/
 
 /* import Image from "next/image";
 import About from './pages/about';
