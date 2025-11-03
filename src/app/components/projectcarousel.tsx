@@ -5,8 +5,8 @@ import { CarouselSet } from "./carousels";
 
 interface CarouselProps {
   carousel: CarouselSet;
-  imageHeight?: string;
-  imageWidth?: string;
+  imageHeight?: string; // e.g. "h-64", "md:h-96"
+  imageWidth?: string;  // e.g. "w-[600px]" or "max-w-lg"
 }
 
 export default function ProjectCarousel({

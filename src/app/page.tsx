@@ -34,15 +34,6 @@ export default function Home() {
   );
 }
 
-/* Some projects to be added: <br />
-            GigaChatbot - Python <br />
-            Demerit Points Calculator - Python, Flask <br />
-            Loft (WIP) - Electron, HTML, Tailwind CSS, TypeScript, React <br />
-            DuskAmp (WIP) - Qt, C++ <br />
-            DuskTorrent (WIP) - Spring, Java <br />
-            This Site (WIP) - Next.js, Electron, HTML, Tailwind CSS, TypeScript, React <br /> 
-*/
-
 /* import Image from "next/image";
 import About from './pages/about';
 
