@@ -12,7 +12,7 @@ interface CarouselProps {
 export default function ProjectCarousel({
   carousel,
   imageHeight = "h-56 md:h-96",
-  imageWidth = "w-[600px]", // default consistent width
+  imageWidth = "w-[600px]",
 }: CarouselProps) {
   return (
     <div id={`${carousel.id}-carousel`} className="relative w-full flex justify-center" data-carousel="static">
