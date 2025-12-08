@@ -29,7 +29,8 @@ export default function Projects() {
               title="Demerit Points Calculator"
               body={
                 <>
-                  Some information about Demerit Points Calculator here... <br />
+                  This calculator was created as the final project for the programming course in my diploma. The course focused primarily on Python, which is why Flask was used. <br />
+                  I made my own adjustments to the Bootstrap provided by the teacher to make it slightly more visually appealing. Please also note that the values in the calculator do not reflect the real-world driving penalty system, and are just for show. <br />
                   <strong>Languages/frameworks: Python, HTML, Flask, Bootstrap</strong>
                 </>
               }
@@ -43,7 +44,8 @@ export default function Projects() {
               title="GigaChatbot"
               body={
                 <>
-                  Some information about GigaChatbot here... <br />
+                  GigaChatbot was created as another project for my high school DigiTech class before Loft. It features a range of commands that can be used to carry out many unique actions. <br />
+                  Although this project is quite old and my skills have grown significantly since then, I consider it a good example to show how far I’ve progressed. <br />
                   <strong>Languages/frameworks: Python</strong>
                 </>
               }
@@ -85,8 +87,8 @@ export default function Projects() {
               title="Portfolio (This site!)"
               body={
                 <>
-                  Some information about this site here... <br />
-                  <strong>Languages/frameworks: Next.js, Electron, HTML, Tailwind CSS, TypeScript, React</strong>
+                 This site was made as a place for me to share my projects with others, tell people a little about who I am, and provide links to other platforms like GitHub and LinkedIn where more information can be found about me. <br />
+                <strong>Languages/frameworks: Next.js, Electron, HTML, Tailwind CSS, TypeScript, React</strong>
                 </>
               }
               imageWidth="w-[600px] md:w-[800px]"

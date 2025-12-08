@@ -10,11 +10,11 @@ export default function Home() {
       <main className="flex-grow flex flex-col font-medium">
         {/* Main title section*/}
         <section className="flex flex-col justify-start flex-grow">
-          <div className="mt-[25vh] ml-[64px]">
-            <div className="text-[96px] leading-[1.3]">
+          <div className="mt-[64px] md:mt-[25vh] ml-[64px]">
+            <div className="text-[64px] md:text-[96px] leading-[1.3] text-wrap">
               Functional, <br />thoughtful design
             </div>
-            <div className="text-[32px] pt-[32px]">
+            <div className="text-[24px] md:text-[32px] pt-[32px]">
               Hi, I’m Zak — a web and software designer/developer, <br />
               focused on expanding my skills across various languages and frameworks.
             </div>
@@ -22,7 +22,7 @@ export default function Home() {
         </section>
 
         {/* Cards */}
-        <section className="relative mt-[20vh]">
+        <section className="relative mt-[64px] md:mt-[20vh]">
           <div className="flex justify-center p-[64px]">
             <ProjectCardGrid />
           </div>
