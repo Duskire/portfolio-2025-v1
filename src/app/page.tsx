@@ -1,16 +1,20 @@
+import Link from "next/link";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import ProjectCardGrid from "./components/projectcardgrid";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
+      <div className="mb-[25vh]">
+        <Navbar />
+      </div>
 
       <main className="flex-grow flex flex-col font-medium">
         {/* Main title section*/}
         <section className="flex flex-col justify-start flex-grow">
-          <div className="mt-[64px] md:mt-[25vh] ml-[64px]">
+          <div className="mx-[64px]">
             <div className="text-[64px] md:text-[96px] leading-[1.3] text-wrap">
               Functional, <br />thoughtful design
             </div>
@@ -18,12 +22,20 @@ export default function Home() {
               Hi, I’m Zak — a web and software designer/developer, <br />
               focused on expanding my skills across various languages and frameworks.
             </div>
+            <div className="flex flex-col md:flex-row mt-[32px] gap-[16px]">
+              <Link href="https://github.com/Duskire" className="flex flex-row px-[16px] py-[8px] gap-[8px] justify-center items-center bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-dark-primary dark:border-gray-700">
+                <FaGithub /> Take a look at my GitHub!
+              </Link>
+              <Link href="https://www.linkedin.com/in/zak-bool/" className="flex flex-row px-[16px] py-[8px] gap-[8px] justify-center items-center bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-dark-primary dark:border-gray-700">
+                <FaLinkedin /> Or take a look at my LinkedIn!
+              </Link>
+            </div>
           </div>
         </section>
 
         {/* Cards */}
         <section className="relative mt-[64px] md:mt-[20vh]">
-          <div className="flex justify-center p-[64px]">
+          <div className="flex justify-center mx-[64px]">
             <ProjectCardGrid />
           </div>
         </section>
