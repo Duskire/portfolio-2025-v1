@@ -18,7 +18,7 @@ export const carousels: CarouselSet[] = [
         ],
     },
     {
-    id: "demerit-points-calculator-carousel",
+    id: "demerit-points-carousel",
         items: [
             { image: "/placeholder.svg", alt: "Image 1" },
             { image: "/placeholder.svg", alt: "Image 2" },
@@ -35,6 +35,14 @@ export const carousels: CarouselSet[] = [
     },
     {
     id: "duskamp-carousel",
+        items: [
+            { image: "/placeholder.svg", alt: "Image 1" },
+            { image: "/placeholder.svg", alt: "Image 2" },
+            { image: "/placeholder.svg", alt: "Image 3" },
+        ],
+    },
+    {
+    id: "user-management-carousel",
         items: [
             { image: "/placeholder.svg", alt: "Image 1" },
             { image: "/placeholder.svg", alt: "Image 2" },

@@ -23,8 +23,8 @@ export default function Footer() {
                 <Link href="/" className="hover:underline">
                 Home
                 </Link>
-                <Link href="/projects" className="hover:underline">
-                Projects
+                <Link href="/work" className="hover:underline">
+                Work
                 </Link>
                 <Link href="/about" className="hover:underline">
                 About

@@ -28,6 +28,12 @@ export default function ProjectCardGrid() {
     },
     {
       image: "/placeholder.svg",
+      title: "User Management System (WIP)",
+      description: "A demo project showcasing the management of user permissions in an organisation.",
+      href: "/projects/#user-management-system",
+    },
+    {
+      image: "/placeholder.svg",
       title: "DuskTorrent (WIP)",
       description: "A lightweight torrent client with a clean, straightforward interface.",
       href: "/projects/#dusktorrent",

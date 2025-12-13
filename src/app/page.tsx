@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import ProjectCardGrid from "./components/projectcardgrid";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import ProjectCardGrid from "@/components/projectcardgrid";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="mb-[25vh]">

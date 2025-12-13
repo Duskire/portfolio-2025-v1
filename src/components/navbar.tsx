@@ -15,10 +15,10 @@ export default function Navbar() {
         {/* Right side of Navbar */}
         <div className="flex flex-col md:flex-row items-center gap-[32px] text-[32px] font-medium">
             <Link
-            href="/projects"
+            href="/work"
             className="relative after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:left-0 hover:after:w-full"
             >
-            Projects
+            Work
             </Link>
             <Link
             href="/about"
