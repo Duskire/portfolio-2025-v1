@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllPosts, getPostBySlug } from "@/utils/blog";
+import { getAllPosts, getPostBySlug } from "@/utils/projects";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { useMDXComponents } from "@/utils/mdx-components";
 import Navbar from "@/components/navbar";

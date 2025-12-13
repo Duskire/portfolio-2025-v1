@@ -4,7 +4,7 @@ import matter from "gray-matter";
 
 const postsDirectory = path.join(process.cwd(), "src/app/work/projects");
 
-export interface BlogPost {
+export interface ProjectPost {
   slug: string;
   title: string;
   summary: string;
@@ -14,7 +14,7 @@ export interface BlogPost {
   content: string;
 }
 
-export function getAllPosts(): BlogPost[] {
+export function getAllPosts(): ProjectPost[] {
   if (!fs.existsSync(postsDirectory)) {
     return [];
   }
@@ -50,7 +50,7 @@ export function getAllPosts(): BlogPost[] {
   return allPostsData;
 }
 
-export function getPostBySlug(slug: string): BlogPost | null {
+export function getPostBySlug(slug: string): ProjectPost | null {
   if (!fs.existsSync(postsDirectory)) {
     return null;
   }
