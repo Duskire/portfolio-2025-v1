@@ -13,6 +13,8 @@
 
 @theme {
   --color-dark-primary: #2D3142;
+  --color-github-black: #181717;
+  --color-linkedin-blue: #0A66C2;
 }
 
 @media (prefers-color-scheme: dark) {

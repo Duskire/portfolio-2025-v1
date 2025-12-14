@@ -23,19 +23,42 @@ export default function HomePage() {
               focused on expanding my skills across various languages and frameworks.
             </div>
             <div className="flex flex-col md:flex-row mt-[32px] gap-[16px]">
-              <Link href="https://github.com/Duskire" className="flex flex-row px-[16px] py-[8px] gap-[8px] justify-center items-center bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-dark-primary dark:border-gray-700">
+              <Link
+                href="https://github.com/Duskire"
+                className="flex flex-row px-[16px] py-[8px] gap-[8px] justify-center items-center 
+                           bg-github-black text-white rounded-lg shadow-sm transition-all 
+                           hover:shadow-[0_4px_15px_rgba(24,23,23,0.6)] hover:scale-105"
+              >
                 <FaGithub /> Take a look at my GitHub!
               </Link>
-              <Link href="https://www.linkedin.com/in/zak-bool/" className="flex flex-row px-[16px] py-[8px] gap-[8px] justify-center items-center bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-dark-primary dark:border-gray-700">
+
+              <Link
+                href="https://www.linkedin.com/in/zak-bool/"
+                className="flex flex-row px-[16px] py-[8px] gap-[8px] justify-center items-center 
+                           bg-linkedin-blue text-white rounded-lg shadow-sm transition-all 
+                           hover:shadow-[0_4px_15px_rgba(10,102,194,0.6)] hover:scale-105"
+              >
                 <FaLinkedin /> Or take a look at my LinkedIn!
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Cards */}
-        <section className="relative mt-[64px] md:mt-[20vh]">
-          <div className="flex justify-center mx-[64px]">
+        {/* Cards Section */}
+        <section className="relative mt-[64px] md:mt-[20vh] flex justify-center">
+          <div className="flex flex-col w-full max-w-[1600px] px-4">
+            {/* Heading and See All */}
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-[36px] md:text-[48px] font-bold">Projects</h2>
+              <Link
+                href="/work"
+                className="px-4 py-2 bg-gray-900 text-white rounded-lg shadow-sm hover:shadow-md transition-all"
+              >
+                See All
+              </Link>
+            </div>
+
+            {/* Card Grid */}
             <ProjectCardGrid />
           </div>
         </section>
@@ -45,6 +68,7 @@ export default function HomePage() {
     </div>
   );
 }
+
 
 /* import Image from "next/image";
 import About from './pages/about';

@@ -1,43 +1,38 @@
 import Link from "next/link";
 
-export interface ProjectCardProps {
-  image: string;
-  title: string;
-  description: string;
-  href: string;
-  buttonText?: string;
-}
+export default function ProjectCard({ project }) {
+  // Short excerpt (first 120 chars)
+  const excerpt = project.content
+    .replace(/^#.*$/gm, "")
+    .replace(/\n+/g, " ")
+    .slice(0, 120)
+    .trim();
 
-export default function ProjectCard({
-  image,
-  title,
-  description,
-  href,
-  buttonText = "Read more",
-}: ProjectCardProps) {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow dark:bg-dark-primary dark:border-gray-700">
-      <Link href={href}>
-        <img
-          className="rounded-t-lg w-full h-48 object-cover"
-          src={image}
-          alt={title}
-        />
+      <Link href={`/work/${project.slug}`}>
+        {project.images?.[0] && (
+          <img
+            className="rounded-t-lg w-full h-48 object-cover"
+            src={project.images[0]}
+            alt={project.title}
+          />
+        )}
       </Link>
       <div className="p-5">
-        <Link href={href}>
+        <Link href={`/work/${project.slug}`}>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:underline">
-            {title}
+            {project.title}
           </h5>
         </Link>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {description}
+          {project.summary || excerpt}
         </p>
         <Link
-          href={href}
+          href={`/work/${project.slug}`}
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          {buttonText}
+          <div>Read more</div>
           <svg
             className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
             aria-hidden="true"
