@@ -45,7 +45,7 @@ export default function HomePage() {
         </section>
 
         {/* Cards Section */}
-        <section className="relative mt-[64px] md:mt-[20vh] flex justify-center">
+        <section className="relative mt-[64px] mx-[64px] md:mt-[20vh] flex justify-center">
           <ProjectCardGrid />
         </section>
       </main>

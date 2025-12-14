@@ -11,9 +11,9 @@ export default function ProjectCardGrid() {
         <h2 className="text-[36px] md:text-[40px] font-bold">Projects</h2>
         <Link
           href="/work"
-          className="px-4 py-2 bg-gray-900 text-white rounded-lg shadow-sm hover:shadow-md transition-all"
+          className="px-4 py-2 bg-gray-900 text-white hover:underline rounded-lg shadow-sm hover:shadow-md transition-all"
         >
-          See All
+          See All →
         </Link>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-8">

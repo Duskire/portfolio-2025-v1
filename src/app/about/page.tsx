@@ -13,7 +13,7 @@ export default function AboutPage() {
         </h1>
 
         {/* Intro card */}
-        <div className="shadow-lg rounded-xl p-8 md:p-12 w-full max-w-2xl flex flex-col space-y-6">
+        <div className="p-8 md:p-12 w-full max-w-2xl flex flex-col space-y-6">
           <p className="text-lg leading-relaxed">
             I am a programmer and designer, with a focus on clean, simple, and thoughtful design.
           </p>
