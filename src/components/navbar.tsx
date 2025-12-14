@@ -3,7 +3,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-        <nav className="flex flex-col md:flex-row items-center justify-between h-[64px] py-[48px] mx-[48px] gap-[32px]">
+        <nav className="flex flex-col md:flex-row items-center justify-between py-[32px] mx-[48px] gap-[32px]">
         {/* Left side of Navbar */}
         <Link
             href="/"

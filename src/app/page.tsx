@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="mb-[25vh]">
+      <div className="md:mb-[25vh]">
         <Navbar />
       </div>
 
@@ -46,21 +46,7 @@ export default function HomePage() {
 
         {/* Cards Section */}
         <section className="relative mt-[64px] md:mt-[20vh] flex justify-center">
-          <div className="flex flex-col w-full max-w-[1600px] px-4">
-            {/* Heading and See All */}
-            <div className="flex justify-between items-center mb-4">
-              <h2 className="text-[36px] md:text-[48px] font-bold">Projects</h2>
-              <Link
-                href="/work"
-                className="px-4 py-2 bg-gray-900 text-white rounded-lg shadow-sm hover:shadow-md transition-all"
-              >
-                See All
-              </Link>
-            </div>
-
-            {/* Card Grid */}
-            <ProjectCardGrid />
-          </div>
+          <ProjectCardGrid />
         </section>
       </main>
 
