@@ -1,7 +1,11 @@
 import Link from "next/link";
+import type { Project } from "@/utils/utils";
 
-export default function ProjectCard({ project }) {
-  // Short excerpt (first 120 chars)
+interface ProjectCardProps {
+  project: Project;
+}
+
+export default function ProjectCard({ project }: ProjectCardProps) {
   const excerpt = project.content
     .replace(/^#.*$/gm, "")
     .replace(/\n+/g, " ")
