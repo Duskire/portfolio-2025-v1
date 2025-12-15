@@ -13,7 +13,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({
+export default async function ProjectPage({
   params,
 }: {
   params: Promise<{ slug: string }>;

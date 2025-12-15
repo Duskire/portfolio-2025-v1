@@ -19,15 +19,15 @@ export default function AboutPage() {
           </p>
 
           <p className="text-lg leading-relaxed">
-            I've been passionate about technology from a young age, and I aim to make my own impact on the industry by creating and innovating with new projects and ideas.
+            I've been passionate about technology from a young age, and I'd love to make my own impact on the industry by creating and innovating with new projects and ideas.
           </p>
 
           <p className="text-lg leading-relaxed">
-            In my free time, I enjoy photography, homelabbing, guitar, and video games.
+            In my own time, a few hobbies of mine include photography, homelab, guitar, and video games.
           </p>
 
           <p className="text-lg leading-relaxed">
-            You can find more of my work or contact me through my links in the page footer. Thank you for taking the time to explore my work!
+            You can find more of my work or contact me through my links on the page footer. Thank you for taking the time to explore my work!
           </p>
         </div>
       </main>
