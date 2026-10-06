@@ -7,7 +7,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="md:mb-[25vh]">
+      <div className="md:mb-[10vh]">
         <Navbar />
       </div>
 
@@ -15,10 +15,10 @@ export default function HomePage() {
         {/* Main title section*/}
         <section className="flex flex-col justify-start flex-grow">
           <div className="mx-[64px]">
-            <div className="text-[64px] md:text-[96px] leading-[1.3] text-wrap">
+            <div className="text-[min(5vw,5rem)] leading-[1.3] text-wrap">
               Functional, <br />thoughtful design
             </div>
-            <div className="text-[24px] md:text-[32px] pt-[32px]">
+            <div className="text-[min(2vw,2rem)] pt-[32px]">
               Hi, I’m Zak — a web and software designer/developer, <br />
               focused on expanding my skills across various languages and frameworks.
             </div>

@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-        <footer className="flex flex-col md:flex-row items-center py-[32px] mx-[48px] gap-[32px] text-[24px]">
+        <footer className="flex flex-col md:flex-row items-center pt-[64px] pb-[32px] mx-[48px] gap-[32px] text-[min(3vw,1.5rem)]">
             <div className="flex flex-col justify-start flex-1">
                 <span className="font-medium">Zak Bool</span>
                 <div className="flex items-center gap-[48px]">
@@ -31,7 +31,7 @@ export default function Footer() {
                 </Link>
             </div>
 
-            <div className="flex justify-end flex-1 text-[20px]">
+            <div className="flex justify-end flex-1 text-[min(3vw,1.5rem)]">
                 &copy; Zak Bool 2025
             </div>
         </footer>
